@@ -15,7 +15,7 @@ function ScrollAnim() {
     const loadImage = (index) => {
       return new Promise((resolve, reject) => {
         const img = new Image();
-        img.src = `/images/${index}.webp`; // Path to images in public folder
+        img.src = `/animimage/${index}.webp`; // Path to images in public folder
         img.onload = () => resolve(img);
         img.onerror = () => reject(`Image ${index} failed to load`);
       }); 
