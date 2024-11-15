@@ -86,3 +86,7 @@
 .main_button:hover:after {
   width: 100%; 
 }
+.main_button:hover path{
+    fill: black; /* Fills the home icon on hover */
+    stroke: black; 
+}
