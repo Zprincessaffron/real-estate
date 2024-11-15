@@ -13,6 +13,9 @@ import PropertySlider from './PropertySlider';
 import { useAppContext } from '../../context/AppContext';
 import Enquire from '../form/Enquire';
 import First from './First';
+import { SlHome } from "react-icons/sl";
+import { BiSolidHome } from "react-icons/bi";
+
 function LanderPage() {
   const { formOpen } = useAppContext()
 
@@ -140,7 +143,25 @@ function LanderPage() {
                 <PopularListing listing={listing}  index={index}/>
               ))}
             </div>
+            <div className='lp_div211'>
+              <button><span>View All </span>
+              <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 64 64"
+        className="home-icon"
+        width={20}
+      >
+        <path
+          d="M32 12L6 36h8v16h12V36h12v16h12V36h8z"
+          fill="none"
+          stroke="black"
+          strokeWidth="3"
+        />
+      </svg>
+              </button>
             </div>
+            </div>
+            
           </div>
 
          <div className='lp_div22'>

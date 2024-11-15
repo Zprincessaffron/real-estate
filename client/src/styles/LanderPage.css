@@ -150,6 +150,50 @@
   justify-content: center;
 
 }
+.lp_div211{
+  display: flex;
+  justify-content: center;
+}
+.lp_div211>button{
+  margin-top: 2rem;
+  padding: 7px 10px;
+  background-color: transparent;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid rgb(193, 193, 193);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgb(22, 22, 22);
+}
+.lp_div211>button:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.lp_div211>button:hover:after {
+  width: 100%; /* Underline expands to the full width of the text */
+}
+.lp_div211>button:hover{
+  border: 1px solid transparent;
+  scale: 102%;
+
+}
+.lp_div211>button:hover path{
+  fill: black; /* Fills the home icon on hover */
+  stroke: black; 
+
+}
+
 .lp_div21>div{
   width: 90%;
 

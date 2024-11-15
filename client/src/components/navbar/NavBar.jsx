@@ -33,6 +33,7 @@ function NavBar() {
   return (
     <div className={`nav_main ${showNavbar}`}>
         <div className='nav_div1'>
+          <h2>Real-estate</h2>
 
         </div>
         <div className='nav_div2'>

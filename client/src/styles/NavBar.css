@@ -18,11 +18,24 @@
 .nav_main.true{
     transform: translateY(0%);
 }
+.nav_div1>h2{
+    color: white;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
 .nav_main>div{
     width: calc(100% /3);
     display: flex;
     align-items: center;
     flex-direction: row;
+}
+.nav_div1>img{
+    height: 50px;
+    margin-left: 20px;
+    width: auto;
 }
 .nav_div3{
     justify-content: space-evenly;
