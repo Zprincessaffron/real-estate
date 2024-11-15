@@ -1,0 +1,129 @@
+.footer_main{
+    padding: 50px 0 30px 0;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(229, 234, 237);
+}
+.footer_div1{
+    width: calc(95% - 1%);
+    background-color: #4C4C4C;
+    height: 350px;
+    border-radius: 20px;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+.footer_div1.true{
+    transform: translateY(-50px);
+}
+.footer_div2{
+    width: 75%;
+    background-color: #2b2b2b;
+    height: 130px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-100px);
+
+
+
+}
+.footer_div2.true{
+    transform: translateY(-52px);
+
+}
+.footer_div11_1{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.footer_div11_1>h2{
+    font-size: 1rem;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.8px
+}
+.footer_div11_1>button{
+    padding: 4px 15px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 0.6rem;
+    width: fit-content;
+
+}
+.footer_div12>h1{
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.footer_div12{
+    margin-top: 50px;
+
+}
+.footer_div12_121{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 60%;
+}
+.footer_div11{
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footer_div12>div{
+    margin-top: 1.5rem;
+    color: white;
+    font-weight: 300;
+    font-size: 0.9rem;
+    letter-spacing: 0.8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer_div11_2{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 1.5rem;
+    color: white;
+    
+}
+.footer_div2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-weight: 300;
+  align-items: center;
+}
+.footer_div21{
+    padding: 20px;
+    
+}
+.footer_div21>p{
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+.footer_div22{
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.footer_div22>p{
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    letter-spacing: 0.7px;
+}

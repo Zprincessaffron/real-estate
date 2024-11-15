@@ -1,0 +1,224 @@
+.enquire_main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.633);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(100%);
+
+}
+.enquire_main.true{
+  opacity: 1;
+  width: 100%;
+  transform: translateX(0);
+
+
+}
+.enquire_main.false{
+  width: 100%;
+}
+.enquire_container{
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-10%);
+
+
+}
+.enquire_container.true{
+  transform: translateX(0);
+
+}
+.enquire_div1{
+    padding: 2rem 0 0 2rem;
+
+}
+.enquire_div1>h1{
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.enquire_main form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5%;
+    gap: 5px;
+}
+.form_div {
+    width: 90%;
+}
+.enquire_main label {
+    display: block;
+    margin-bottom: 0px;
+    font-weight: 600;
+    color: #4d4d4d;
+  }
+  
+ .enquire_main input[type="text"],
+ .enquire_main input[type="email"],
+ .enquire_main input[type="tel"],
+ .enquire_main select,
+ .enquire_main textarea {
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #444;
+    color: #000000;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+ .enquire_main input[type="text"]:focus,
+ .enquire_main input[type="email"]:focus,
+ .enquire_main input[type="tel"]:focus,
+ .enquire_main select:focus,
+ .enquire_main textarea:focus {
+    border-bottom-color: #4e7e6f; /* Orange color for focus */
+  }
+  
+ .enquire_main select {
+    appearance: none;
+    cursor: pointer;
+  }
+  
+ .enquire_main option {
+    color: #000; /* Dark text on dropdown options */
+  }
+  
+.enquire_main textarea {
+    resize: none;
+  }
+
+  
+ .enquire_main p {
+    color: #0a3c30;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
+
+
+
+  $button-size: 40px;
+  $close-width: ($button-size / 10);
+  
+.btn_container{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.form_div>button{
+  border: none;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 9px 25px;
+  background-color: black;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-left: 2%;
+
+}
+
+.btn_container>button{
+  border: none;
+}
+.close-button {
+  display: block;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  border: none;
+  > div {
+    position: relative;
+  }
+  &-block {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: calc(55% - 4px);
+      display: block;
+      width: 2px;
+      height: 20px;
+      border: none;
+      transform-origin: bottom center;
+      background: rgb(0, 0, 0);
+      transition: all ease-out 280ms;
+    }
+    &:last-of-type {
+      transform: rotate(180deg);
+    }
+  }
+  .in {
+    .close-button-block {
+      &:before {
+        transition-delay: 280ms;
+        transform: translateX(20px) translateY(-20px) rotate(45deg);
+      }
+      &:after {
+        transition-delay: 280ms;
+        transform: translateX(-22px) translateY(-22px) rotate(-45deg);
+      }
+    }
+  }
+  .out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+
+
+    .close-button-block {
+      &:before {
+        transform: translateX(-5px) translateY(5px) rotate(45deg);
+      }
+      &:after {
+        transform: translateX(5px) translateY(5px) rotate(-45deg);
+      }
+    }
+  }
+  &:hover {
+    .in {
+      .close-button-block {
+        &:before {
+          transform: translateX(-5px) translateY(5px) rotate(45deg);
+        }
+        &:after {
+          transform: translateX(5px) translateY(5px) rotate(-45deg);
+        }
+      }
+    }
+    .out {
+      .close-button-block {
+        &:before {
+          transform: translateX(-20px) translateY(20px) rotate(45deg);
+        }
+        &:after {
+          transform: translateX(20px) translateY(20px) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
