@@ -35,7 +35,7 @@
     font-size: 1.3rem;
 }
 .sa_div21>p{
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 0.5px;
     font-size: 0.9rem;
     width: 80%;
@@ -52,4 +52,37 @@
     padding: 7px 20px;
     cursor: pointer;
     border: 1px solid rgba(128, 128, 128, 0.515);
+}
+.main_button{
+  padding: 7px 10px;
+  background-color: transparent;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid rgb(193, 193, 193);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgb(22, 22, 22);
+  position: relative;
+}
+.main_button:after{
+
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+.main_button:hover{
+    border: 1px solid transparent;
+    scale: 102%;
+}
+.main_button:hover:after {
+  width: 100%; 
 }

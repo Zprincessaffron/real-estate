@@ -18,7 +18,7 @@ function ScrollAnim() {
         img.src = `/images/${index}.webp`; // Path to images in public folder
         img.onload = () => resolve(img);
         img.onerror = () => reject(`Image ${index} failed to load`);
-      });
+      }); 
     };
 
     // Load all 200 images
@@ -105,9 +105,51 @@ function ScrollAnim() {
 			<h3>Looking to buy or sell a Home?</h3>
 			<p>We’re the most respected company in the industry because we deliver extraordinary experiences by defying mediocrity and always giving you 121% of what you expect from us.</p>
 			<div className='sa_div21_1'>
-			<button>Buy</button>
-			<button>Sell</button>
-			<button onClick={()=>setFormOpen(true)}>Enquire</button>
+			<button className='main_button'>Buy
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 64 64"
+        className="home-icon"
+        width={20}
+      >
+        <path
+          d="M32 12L6 36h8v16h12V36h12v16h12V36h8z"
+          fill="none"
+          stroke="black"
+          strokeWidth="3"
+        />
+      </svg>
+      </button>
+			<button className='main_button'>Sell
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 64 64"
+        className="home-icon"
+        width={20}
+      >
+        <path
+          d="M32 12L6 36h8v16h12V36h12v16h12V36h8z"
+          fill="none"
+          stroke="black"
+          strokeWidth="3"
+        />
+      </svg>
+      </button>
+			<button className='main_button' onClick={()=>setFormOpen(true)}>Enquire
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 64 64"
+        className="home-icon"
+        width={20}
+      >
+        <path
+          d="M32 12L6 36h8v16h12V36h12v16h12V36h8z"
+          fill="none"
+          stroke="black"
+          strokeWidth="3"
+        />
+      </svg>
+      </button>
 			</div>
 		</div>
       </div>

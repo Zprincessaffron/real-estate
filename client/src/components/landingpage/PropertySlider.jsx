@@ -95,7 +95,21 @@ function PropertySlider() {
          </div>
          <h1>Exclusive listing</h1>
          <p>Whether you’re buying or selling, prestige properties call for a tailored approach. Discover a Northern Beaches real estate agency with the expertise exceptional homes require.</p>
-         <button>Enquire Now</button>
+         <button className='main_button'>Enquire Now
+         <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 64 64"
+        className="home-icon"
+        width={20}
+      >
+        <path
+          d="M32 12L6 36h8v16h12V36h12v16h12V36h8z"
+          fill="none"
+          stroke="black"
+          strokeWidth="3"
+        />
+      </svg>
+         </button>
         </div>
         <div className='pl_container2'>
             <div className='pl_container2_div1'>
