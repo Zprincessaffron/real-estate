@@ -6,10 +6,14 @@ import { useEffect } from 'react';
 function First() {
 
     const [close,setClose]=useState(false)
+    const [PerClose,setPerClose]=useState(false)
     useEffect(() => {
        setTimeout(() => {
         setClose(true)
        }, 1500);
+       setTimeout(() => {
+        setPerClose(true)
+       }, 4000);
     }, [])
 
 
@@ -30,31 +34,35 @@ function First() {
         
     ]
   return (
-    <div className={`first_main ${close}`}>
- <motion.div
-      initial={{ y: '55vh' }} // Start off-screen at the bottom
-      animate={{ y: 0 }} // Slide to the original position (0)
-      exit={{ y: '100%' }} // Exit by sliding back to the bottom
-      transition={{ type: 'spring', stiffness: 100, damping: 15,delay:0 }} // Spring-based animation for smoothness
-      style={{backgroundImage:`url(${listings[0].image})`}}>
-    </motion.div>
-    <motion.div
-      initial={{ y: '55vh' }} // Start off-screen at the bottom
-      animate={{ y: 0 }} // Slide to the original position (0)
-      exit={{ y: '100%' }} // Exit by sliding back to the bottom
-      transition={{ type: 'spring', stiffness: 100, damping: 15,delay:0.1 }}  // Spring-based animation for smoothness
-      style={{backgroundImage:`url(${listings[1].image})`}}>
-
-    </motion.div>
-    <motion.div
-      initial={{ y: '55vh' }} // Start off-screen at the bottom
-      animate={{ y: 0 }} // Slide to the original position (0)
-      exit={{ y: '100%' }} // Exit by sliding back to the bottom
-      transition={{ type: 'spring', stiffness: 100, damping: 15,delay:0.2 }} // Spring-based animation for smoothness
-      style={{backgroundImage:`url(${listings[2].image})`}}>
-
-    </motion.div>
-    </div>
+    <>
+    {PerClose?(null):(
+      <div className={`first_main ${close}`}>
+      <motion.div
+           initial={{ y: '55vh' }} // Start off-screen at the bottom
+           animate={{ y: 0 }} // Slide to the original position (0)
+           exit={{ y: '100%' }} // Exit by sliding back to the bottom
+           transition={{ type: 'spring', stiffness: 100, damping: 15,delay:0 }} // Spring-based animation for smoothness
+           style={{backgroundImage:`url(${listings[0].image})`}}>
+         </motion.div>
+         <motion.div
+           initial={{ y: '55vh' }} // Start off-screen at the bottom
+           animate={{ y: 0 }} // Slide to the original position (0)
+           exit={{ y: '100%' }} // Exit by sliding back to the bottom
+           transition={{ type: 'spring', stiffness: 100, damping: 15,delay:0.1 }}  // Spring-based animation for smoothness
+           style={{backgroundImage:`url(${listings[1].image})`}}>
+     
+         </motion.div>
+         <motion.div
+           initial={{ y: '55vh' }} // Start off-screen at the bottom
+           animate={{ y: 0 }} // Slide to the original position (0)
+           exit={{ y: '100%' }} // Exit by sliding back to the bottom
+           transition={{ type: 'spring', stiffness: 100, damping: 15,delay:0.2 }} // Spring-based animation for smoothness
+           style={{backgroundImage:`url(${listings[2].image})`}}>
+     
+         </motion.div>
+         </div>
+    )}
+    </>
   )
 }
 

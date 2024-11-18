@@ -15,16 +15,14 @@ import Enquire from '../form/Enquire';
 import First from './First';
 import { SlHome } from "react-icons/sl";
 import { BiSolidHome } from "react-icons/bi";
+import { IoIosArrowForward } from "react-icons/io";
 
 function LanderPage() {
   const { formOpen } = useAppContext()
+  const [expand,setExpand] =useState(false)
 
-  const [close,setClose]=useState(false)
-  useEffect(() => {
-     setTimeout(() => {
-      setClose(true)
-     }, 1500);
-  }, [])
+ 
+
 
   const listings = [
     {
@@ -107,12 +105,21 @@ function LanderPage() {
                 <div className='lp_div122_1'>
 
                 </div>
-                <div className='lp_div122_2'>
-                  <div className="search-bar">
+                <div className={`lp_div122_2 ${expand}`}>
+                  <div className={`search-bar ${expand}`}  onFocus={()=>{setExpand(true)}} onBlur={()=>{setExpand(false)}}>
                     <input type="text" placeholder="City, Area, Building..." />
                     <button type="submit">
                       <span role="img" aria-label="search"><TfiSearch /></span>
                     </button>
+                  </div>
+                  <div className='lp_div122_3'>
+                    <div>
+                      <h2>Quick Links</h2>
+                      <p><IoIosArrowForward/> About</p>
+                      <p><IoIosArrowForward/> Login</p>
+                      <p><IoIosArrowForward/> Connectus</p>
+                    </div>
+
                   </div>
 
                 </div>
