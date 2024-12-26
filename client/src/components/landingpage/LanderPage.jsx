@@ -113,12 +113,14 @@ function LanderPage() {
                     </button>
                   </div>
                   <div className='lp_div122_3'>
-                    <div>
+                    {expand?(
+                      <div>
                       <h2>Quick Links</h2>
                       <p><IoIosArrowForward/> About</p>
                       <p><IoIosArrowForward/> Login</p>
                       <p><IoIosArrowForward/> Connectus</p>
                     </div>
+                    ):null}
 
                   </div>
 

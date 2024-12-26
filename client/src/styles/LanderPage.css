@@ -359,11 +359,21 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
 
 }
 .lp_div122_3>div>h2{
   font-size: 0.8rem;
+
+
 }
 .lp_div122_3>div>p{
   font-size: 0.9rem;
+  cursor: pointer;
+}
+.lp_div122_3>div>p:hover{
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: gray ;
 }
